@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// Importações dos componentes e bibliotecas
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Navbar from './layout/Navbar';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
+// Função principal do componente App
 function App() {
   return (
+    // Elemento principal da aplicação
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Configuração do roteador usando BrowserRouter */}
+      <Router>
+        {/* Inclusão do componente Navbar na estrutura da aplicação */}
+        <Navbar />
+        {/* Definição das rotas usando o componente Routes */}
+        <Routes>
+          {/* Rota padrão que renderiza o componente Home */}
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

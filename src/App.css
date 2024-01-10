@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+/* Importação da fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Definição das variáveis de cor e estilo */
+:root {
+  --background-color: #0A0A0A;                   /* Cor de fundo geral */
+  --main-primary-color: #2C2C2C;                 /* Cor primária principal */
+  --main-primary-color-darker: #1F1F1F;          /* Cor primária mais escura */
+  --main-secondary-color: #FD7014;               /* Cor secundária principal */
+  --main-secondary-color-hover: #fd7114dc;      /* Cor secundária ao passar o mouse */
+  --text-color-primary: #F4F4F4;                 /* Cor principal do texto */
+  --text-color-secondary: #8B8B8B;               /* Cor secundária do texto */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo global do corpo da página */
+body {
+  padding: 24px;                                /* Espaçamento interno do corpo da página */
 }

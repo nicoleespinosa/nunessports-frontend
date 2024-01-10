@@ -1,0 +1,53 @@
+/* Estilos para o modal */
+.modal-content {
+    background-color: var(--main-primary-color);
+    color: var(--text-color-primary);
+}
+
+.modal-header {
+    background-color: var(--main-primary-color);
+    border-bottom: 2px solid var(--main-secondary-color);
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Estilos para os inputs */
+.form-control {
+    background-color: var(--main-primary-color-darker);
+}
+
+.form-control:focus {
+    background-color: var(--main-primary-color-darker);
+    color: var(--text-color-primary);
+}
+
+/* Estilos para os botões do formulário dentro do modal */
+.btn-group-form Button {
+    width: 100%;
+    margin: 0 2px;
+}
+
+/* Estilos específicos para os botões de confirmação e cancelamento */
+.btn-confirm {
+    background-color: var(--main-secondary-color);
+    border-color: var(--main-secondary-color);
+}
+
+.btn-confirm:hover {
+    background-color: var(--main-secondary-color-hover);
+    border-color: var(--main-secondary-color-hover);
+}
+
+.btn-cancel {
+    background-color: var(--main-primary-color);
+    border-color: var(--main-secondary-color);
+    color: var(--text-color-primary);
+}
+
+.btn-cancel:hover {
+    background-color: var(--main-primary-color-darker);
+    border-color: var(--main-secondary-color-hover);
+    color: var(--text-color-primary);
+}

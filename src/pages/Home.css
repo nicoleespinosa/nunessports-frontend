@@ -1,0 +1,72 @@
+/* Definições globais */
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--background-color);
+    font-size: 15px;
+}
+
+/* Estilos para botões */
+.btn {
+    font-size: 14px;
+}
+
+.btn-new-product {
+    background-color: var(--main-secondary-color);
+    color: var(--text-color-primary);
+    border: none;
+}
+
+.btn-new-product:hover {
+    background-color: var(--main-secondary-color-hover);
+    color: var(--text-color-primary);
+}
+
+/* Estilos para botões dentro da tabela */
+.btn-table-action {
+    margin: auto;
+    width: 100%;
+}
+
+/* Estilos para elementos de formulário */
+.input-group span {
+    background-color: var(--main-secondary-color);
+    border: none;
+    color: var(--text-color-primary);
+}
+
+.form-control {
+    background-color: var(--main-primary-color);
+    color: var(--text-color-primary);
+    font-size: 14px;
+    border: none;
+}
+
+.form-control::placeholder {
+    color: var(--text-color-secondary);
+    font-size: 14px;
+}
+
+.form-control:focus {
+    background-color: var(--main-primary-color);
+    box-shadow: var(--main-secondary-color) 0px 0px 0px 1px;
+    color: var(--text-color-primary);
+}
+
+/* Estilos para tabelas */
+.table, .table td {
+    background-color: var(--background-color);
+}
+
+.table th {
+    text-align: center;
+    background-color: var(--main-primary-color);
+}
+
+.table td {
+    text-align: center;
+}
+
+.table th, .table td {
+    border: var(--text-color-secondary) 1px solid;
+    color: var(--text-color-primary);
+}
